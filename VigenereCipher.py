@@ -1,5 +1,19 @@
 # Dahan, Regine Fae M. (BSCPE 1-5) Vigenére Cipher
 
+#introduction
+import pyfiglet
+import time
+
+the_intro ='Starting...'
+print(pyfiglet.figlet_format(the_intro,font="digital"))
+time.sleep(3)
+print('Hello! This program is entitled THE VIGENÉRE CIPHER!')
+time.sleep(2)
+
+now_begin ='Let\'s start'
+print(pyfiglet.figlet_format(now_begin,font="bubble"))
+time.sleep (2) 
+
 # ask the user for input message and key
 user_input = (input("Enter a message: ")).lower()
 keyword = (input("Enter a key: ")).lower()
