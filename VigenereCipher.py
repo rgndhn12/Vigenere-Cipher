@@ -8,6 +8,7 @@ keyword = (input("Enter a key: "))
 def encrypt(text, key):
     letters = list("abcdefghijklmnopqrstuvwxyz")
     key_list = []
+    encrypted = []
 
 #   converting it to number
     for i in range(len(text)):
@@ -16,10 +17,15 @@ def encrypt(text, key):
                 break
             else:
                 key_list.append(letters.index(i))
-                
+
 #   adding the input message and key
 #   using modulus
 
-# display the output
+    for i in range(len(text)):
+        add = (letters.index(text[i]) + key_list[i])
+        encrypted.append(letters[add % 26].upper())
+    
+    return ' '.join(encrypted)
 
+# display the output
 
