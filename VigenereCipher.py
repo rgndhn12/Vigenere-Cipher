@@ -42,4 +42,6 @@ def encrypt(text, key):
     return ' '.join(encrypted)
 
 # display the output
+print('=========================================PLEASE WAIT=========================================')
+time.sleep (2)
 print('The output of your message and key is>>>',encrypt(user_input, keyword))
