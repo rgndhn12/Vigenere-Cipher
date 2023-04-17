@@ -1,8 +1,8 @@
 # Dahan, Regine Fae M. (BSCPE 1-5) Vigenére Cipher
 
 # ask the user for input message and key
-user_input = (input("Enter a message: "))
-keyword = (input("Enter a key: "))
+user_input = (input("Enter a message: ")).lower()
+keyword = (input("Enter a key: ")).lower()
 
 # user's input to be encrypt through...
 def encrypt(text, key):
@@ -28,4 +28,4 @@ def encrypt(text, key):
     return ' '.join(encrypted)
 
 # display the output
-
+print('The output of your message and key is>>>',encrypt(user_input, keyword))
